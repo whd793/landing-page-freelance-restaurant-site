@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Malai Thai || Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Julius+Sans+One"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <style>
+      #footer .container {
+        padding-left: 50px;
+      }
+
+      .block h3 {
+        font-size: 2.5rem;
+      }
+      #banner {
+        height: 70vh;
+        display: flex;
+        margin-top: 75px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url("images/headerz.jpg");
+        background-color: rgba(0, 0, 0, 0.597);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-blend-mode: overlay;
+        color: white;
+      }
+
+      /* #slider .block .owl-carousel .owl-buttons {
+      position: absolute;
+      right: -15px;
+      top: 55px;
+      font-weight: bolder;
+      font-size: 100px;
+      color: #AA9D84;
+  } */
+
+      nav .block {
+        margin-right: -35px;
+        margin-left: -35px;
+      }
+
+      .footernavs a {
+        color: gray;
+        font-size: 2rem;
+      }
+      #banner h3,
+      #banner h1 {
+        font-family: "Julius Sans One", sans-serif;
+        padding-right: 15px;
+        padding-left: 15px;
+        text-align: center;
+        /* padding-right: 50%; */
+      }
+
+      #banner h1 {
+        font-size: 9rem;
+      }
+
+      #banner h3 {
+        font-size: 3rem;
+      }
+
+      nav .navbar-toggle .collapsed {
+        margin-top: 55px;
+      }
+
+      .innav {
+        display: block;
+        margin: 10px auto;
+        float: center;
+        text-align: center;
+        width: 41%;
+        color: white;
+      }
+
+      .innav a {
+        margin: 0 10px;
+        font-size: 2rem;
+        color: white;
+      }
+      /* .navbar-header {
+      width: 1000px;
+  } */
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav id="navigation">
+      <div class="container" style="width: 100%; max-width: 100%">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block" style="height: 90px">
+              <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header" style="border: none">
+                    <img
+                      style="height: 50px; margin-left: 15px"
+                      src="images/logoz.png"
+                      alt="Logo"
+                    />
+
+                    <button
+                      style="margin-top: 12px"
+                      type="button"
+                      class="navbar-toggle collapsed"
+                      data-toggle="collapse"
+                      data-target="#bs-example-navbar-collapse-1"
+                    >
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <!-- <a class="navbar-brand" href="#"> -->
+                    <!-- </a> -->
+                    <p
+                      class="spanz"
+                      style="
+                        font-size: 1.7rem;
+                        margin-top: -32px;
+                        margin-left: 100px;
+                        display: block;
+                        color: orange;
+                      "
+                    >
+                      Gom Shabu Shabu
+                      <span class="hidez" style="color: grey"
+                        >- Korean & Japanese Hotpot</span
+                      >
+                    </p>
+                  </div>
+
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div
+                    class="collapse navbar-collapse"
+                    id="bs-example-navbar-collapse-1"
+                  >
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#hero-area">Home</a></li>
+                      <li><a href="about.html">about us</a></li>
+                      <li><a href="about.html">menu</a></li>
+                      <li><a href="gallery.html">gallery</a></li>
+                      <li><a href="#contact-us">contacts</a></li>
+                    </ul>
+                  </div>
+                  <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+              </nav>
+            </div>
+          </div>
+          <!-- .col-md-12 close -->
+        </div>
+        <!-- .row close -->
+      </div>
+      <!-- .container close -->
+    </nav>
+
+    <!-- Menu -->
+    <div class="container menu">
+      <div class="row">
+        <div class="col">
+          <h3 class="pb-3 menu-title">Menu</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="menu">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="app-tab"
+                  data-toggle="tab"
+                  href="#app"
+                  role="tab"
+                  aria-controls="app"
+                  aria-selected="true"
+                  >Appetizers</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="soup-tab"
+                  data-toggle="tab"
+                  href="#soup"
+                  role="tab"
+                  aria-controls="soup"
+                  aria-selected="false"
+                  >Soups</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="salad-tab"
+                  data-toggle="tab"
+                  href="#salad"
+                  role="tab"
+                  aria-controls="salad"
+                  aria-selected="false"
+                  >Thai Salads</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="curry-tab"
+                  data-toggle="tab"
+                  href="#curry"
+                  role="tab"
+                  aria-controls="curry"
+                  aria-selected="false"
+                  >Tasty Curries</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="noodlefr-tab"
+                  data-toggle="tab"
+                  href="#noodlefr"
+                  role="tab"
+                  aria-controls="noodlefr"
+                  aria-selected="false"
+                  >Noodles & Fried Rice</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="entrees-tab"
+                  data-toggle="tab"
+                  href="#entrees"
+                  role="tab"
+                  aria-controls="entrees"
+                  aria-selected="false"
+                  >Entrees</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="drinks-tab"
+                  data-toggle="tab"
+                  href="#drinks"
+                  role="tab"
+                  aria-controls="drinks"
+                  aria-selected="false"
+                  >Drinks</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="app"
+                role="tabpanel"
+                aria-labelledby="app-tab"
+              >
+                <h6 class="pt-3">Fresh Mango Rolls <span>$5.95</span></h6>
+                <p>
+                  Mangoes, tofu, cucumber, glass noodles, carrots, cilantro,
+                  green leaf lettuce, <br />
+                  together and served in our special peanut sauce
+                </p>
+                <h6>Spring Rolls <span>$5.00</span></h6>
+                <p>
+                  Crispy fried rolls with cabbage, carrots, glass noodle,
+                  celery, black mushroom, <br />
+                  and served with sweet and sour sauce
+                </p>
+                <h6>Chicken Satay <span>$6.95</span></h6>
+                <p>
+                  Marinated chicken grilled to perfection on wooden skewers
+                  served with peanut sauce <br />
+                  and cucumber salad
+                </p>
+                <h6>Angel Wings <span>$7.95</span></h6>
+                <p>
+                  Golden fried chicken wings stuffed with glass noodles, black
+                  mushroom, onion, and celery, <br />served with sweet and sour
+                  sauce
+                </p>
+                <h6>Shrimp Rolls <span>$6.95</span></h6>
+                <p>
+                  Shrimp wrapped in a wonton and fried golden brown, with sweet
+                  and sour sauce
+                </p>
+                <h6>Chicken Wings <span>$5.95</span></h6>
+                <p>
+                  Breaded and fried chicken wings served with sweet and sour
+                  sauce
+                </p>
+                <h6>Crab puff <span>$6.95</span></h6>
+                <p>
+                  Golden fried wonton stuffed with crab meat, cream cheese,
+                  onion, celery, <br />and served with sweet and sour sauce
+                </p>
+                <h6>Golden Squid <span>$6.95</span></h6>
+                <p>Breaded and fried squid served with sweet and sour sauce</p>
+                <h6>MaLai Combo <span>$9.95</span></h6>
+                <p>
+                  Spring rolls, shrimp rolls, and crab puffs all together with
+                  their special sauces
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="soup"
+                role="tabpanel"
+                aria-labelledby="soup-tab"
+              >
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Your Choice of</th>
+                      <th scope="col">Small</th>
+                      <th scope="col">Large</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Chicken, Pork, or Tofu</th>
+                      <th>$4.95</th>
+                      <th>$8.95</th>
+                    </tr>
+                    <tr>
+                      <th>Shrimp or Squid</th>
+                      <th>$6.95</th>
+                      <th>$10.95</th>
+                    </tr>
+                  </tbody>
+                </table>
+                <h6 class="pt-3">Tom Yum</h6>
+                <p>
+                  Hot sweet and sour soup with lemongrass, galangal, thai chili,
+                  onion, <br />tomato, mushrooms, and cilantro
+                </p>
+                <h6>Tom Khar</h6>
+                <p>
+                  Spicy coconut soup with galangal, lemongrass, mushrooms,
+                  tomato, thai chili, <br />onion, cilantro, and fresh lime
+                  juice
+                </p>
+                <h6 class="pt-3">Glass Noodle Soup <span>$10.95</span></h6>
+                <p>
+                  Mild soup with shrimp, chicken, glass noodles, mushrooms,
+                  carrots, onion, napa and cilantro.
+                </p>
+                <h6>Potak (Tom Yum Seafood Pot) <span>$13.95</span></h6>
+                <p>
+                  Tom yum soup prepared with Thai style seafood, including
+                  shrimp, squid, scallop, green <br />mussel and basil
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="salad"
+                role="tabpanel"
+                aria-labelledby="salad-tab"
+              >
+                <h6 class="pt-3">Thai Salad <span>$7.95</span></h6>
+                <p>
+                  Fresh greens from the garden with cucumber, tomato, onion,
+                  tofu, hard boiled eggs, <br />and chicken. Served with peanut
+                  dressing
+                </p>
+                <h6>Num Tok <span>$9.95</span></h6>
+                <p>
+                  Grilled sliced beef with Thai chili, fresh lime juice, tomato,
+                  cucumber, onion, <br />ground roasted rice, and fresh mint
+                  leaves, served on a bed of lettuce
+                </p>
+                <h6>Larb Chicken <span>$8.95</span></h6>
+                <p>
+                  Hand ground pork or chicken mixed with roasted rice, Thai
+                  chili, onion, cilantro, <br />fresh mint leaves, and lime
+                  juice.
+                </p>
+                <h6>Yum Woon Sen <span>$10.95</span></h6>
+                <p>
+                  Spicy glass noodle salad with ground chicken, shrimp, onion,
+                  tomato, carrots, cilantro, <br />in a special lime chili
+                  dressing
+                </p>
+                <h6>Yum Goong <span>$12.95</span></h6>
+                <p>
+                  Grilled shrimp, celery, mint, onion, lemongrass, cilantro,
+                  tomato, and chili lime dressing <br />on a bed of lettuce
+                </p>
+                <h6>Sum Tom <span>$8.95</span></h6>
+                <p>
+                  Green papaya salad with grilled shrimp, tomato, carrots, and a
+                  home made sauce
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="curry"
+                role="tabpanel"
+                aria-labelledby="curry-tab"
+              >
+                <table class="pt-3 table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Your Choice of</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Beef, Chicken, Pork, or Tofu</th>
+                      <th>$8.95</th>
+                    </tr>
+                    <tr>
+                      <th>Shrimp or Squid</th>
+                      <th>$10.95</th>
+                    </tr>
+                    <tr>
+                      <th>Combination Seafood</th>
+                      <th>$13.95</th>
+                    </tr>
+                    <tr>
+                      <th>Extra Jasmine Rice</th>
+                      <th>$1.50</th>
+                    </tr>
+                  </tbody>
+                </table>
+                <h6 class="pt-3">Panang Curry</h6>
+                <p>Carrots, bell peppers, peas, sweet basil</p>
+                <h6>Red Curry</h6>
+                <p>Bamboo shoots, eggplant, bell pepper, and basil</p>
+                <h6>Green Curry</h6>
+                <p>Bamboo shoots, eggplant, bell pepper, and basil</p>
+                <h6>Yellow Curry</h6>
+                <p>Onion, potato, and carrots</p>
+                <h6>Masaman Curry</h6>
+                <p>Onion, potato, carrots, and peanuts</p>
+                <h6>Pumpkin Curry</h6>
+                <p>Thai pumpkin, bell peppers, sweet basil in red curry</p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="noodlefr"
+                role="tabpanel"
+                aria-labelledby="noodlefr-tab"
+              >
+                <table class="pt-3 table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Your Choice of</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Beef, Chicken, Pork, or Tofu</th>
+                      <th>$8.95</th>
+                    </tr>
+                    <tr>
+                      <th>Shrimp or Squid</th>
+                      <th>$10.95</th>
+                    </tr>
+                    <tr>
+                      <th>Combination Seafood</th>
+                      <th>$13.95</th>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4 class="pt-3">Noodles</h4>
+                <h6 class="pt-3">Pad Thai</h6>
+                <p>
+                  Stir fried noodles with tofu, bean sprouts, green onion, egg,
+                  with ground peanuts, chilies, and sugar
+                </p>
+                <h6>Spicy Noodles</h6>
+                <p>
+                  Hot and spicy stir fried wide fresh rice noodles with garlic,
+                  chili, eggs, bell pepper, onion, broccoli, and basil
+                </p>
+                <h6>Pad Se-Ew</h6>
+                <p>
+                  Flat rice noodles pan fried with sweet soy sauce, egg,
+                  broccoli, and carrots
+                </p>
+                <h6>Noodle Pad Gai</h6>
+                <p>
+                  Stir fried wide fresh noodles with chicken, egg, ginger, bean
+                  sprouts, and green onion
+                </p>
+                <h6>Silver Noodles</h6>
+                <p>
+                  Glass noodles pan fried with onion, egg, and garden vegetables
+                </p>
+                <h6>Tom Yum Noodle Soup</h6>
+                <p>
+                  Spicy and sour with bean sprouts, onion, roasted garlic,
+                  cilantro and ground peanuts
+                </p>
+                <h6>Thai Style Noodle Soup</h6>
+                <p>
+                  Thai rice noodles, bean sprouts, onion, cilantro, and roasted
+                  garlic
+                </p>
+                <h4 class="py-3">Fried Rice</h4>
+                <h6>MaLai Fried Rice</h6>
+                <p>Thai fried rice with onion, peas, carrots, and egg</p>
+                <h6>Spicy Fried Rice</h6>
+                <p>
+                  Hot and spicy fried rice with egg, garlic, Thai chili, onion,
+                  carrots, bell peppers, and sweet basil
+                </p>
+                <h6>Pineapple Fried Rice <span>$11.95</span></h6>
+                <p>
+                  Chicken and shrimp with cashew nuts, pineapple, raisins,
+                  onion, peas, and carrots
+                </p>
+                <h6>Crab Fried Rice <span>$11.95</span></h6>
+                <p>Crab meat with tomatoes, green onion, cilantro, and egg</p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="entrees"
+                role="tabpanel"
+                aria-labelledby="entrees-tab"
+              >
+                <table class="pt-3 table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Your Choice of</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Beef, Chicken, Pork, or Tofu</th>
+                      <th>$8.95</th>
+                    </tr>
+                    <tr>
+                      <th>Shrimp or Squid</th>
+                      <th>$10.95</th>
+                    </tr>
+                    <tr>
+                      <th>Combination Seafood</th>
+                      <th>$13.95</th>
+                    </tr>
+                    <tr>
+                      <th>Extra Jasmine Rice</th>
+                      <th>$1.50</th>
+                    </tr>
+                  </tbody>
+                </table>
+                <h6 class="pt-3">Pad Gra Prow</h6>
+                <p>
+                  Stir fried garlic, chilies, bell peppers, onion, carrots, and
+                  basil
+                </p>
+                <h6>Pad Puk</h6>
+                <p>Stir fried seasonal vegetables with oyster sauce</p>
+                <h6>Fresh Ginger Roots</h6>
+                <p>
+                  Stir fried fresh ginger with onion, garlic, mushroom, bell
+                  peppers, and carrots
+                </p>
+                <h6>Garlic Peppers</h6>
+                <p>
+                  Stir fried onion and black pepper with onion and our special
+                  sauce
+                </p>
+                <h6>Spicy Cashew Nuts</h6>
+                <p>
+                  Stir fried cashew nuts with onion, bell peppers, and Thai
+                  chili sauce
+                </p>
+                <h6>Spicy Fresh Chili</h6>
+                <p>
+                  Your meat pan fried with jalapeno peppers, garlic, onion, and
+                  bell peppers
+                </p>
+                <h6>Sweet and Sour</h6>
+                <p>
+                  Pineapple, onion, bell pepper, cucumber, carrots, tomatoes,
+                  and green peas
+                </p>
+                <h6>Spicy Eggplant</h6>
+                <p>
+                  Stir fry with Thai chili, eggplant, basil, onion, and bell
+                  pepper
+                </p>
+                <h6>Pra Ram</h6>
+                <p>
+                  Steamed spinach, broccoli, and carrots topped with peanut
+                  sauce
+                </p>
+                <h6>Pad Ped</h6>
+                <p>
+                  Bamboo shoots, green beans, bell peppers with red curry paste,
+                  coconut milk, and basil
+                </p>
+                <h6>Pad Prik Khing</h6>
+                <p>
+                  Stir fried green beans and carrots with prik khing curry paste
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="drinks"
+                role="tabpanel"
+                aria-labelledby="drinks-tab"
+              >
+                <h6 class="pt-3">Thai Iced Tea <span>$2.95</span></h6>
+                <h6 class="pt-3">Thai Iced Coffee <span>$2.95</span></h6>
+                <h6 class="pt-3">Thai Tea Hot Pot <span>$2.00</span></h6>
+                <h6 class="pt-3">Regular Iced Tea <span>$1.75</span></h6>
+                <h6 class="pt-3">Sodas <span>$1.95</span></h6>
+                <p>
+                  <i
+                    >Dr.Pepper, Pepsi, Diet Pepsi, Mountain Dew, Sierra Mist,
+                    Mug Root Beer</i
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer id="footer-bottom">
+      <section id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="block wow fadeInLeft" data-wow-delay="200ms">
+                <h3>CONTACT <span>INFO</span></h3>
+                <div class="info">
+                  <ul>
+                    <li>
+                      <h4><i class="fa fa-phone"></i>Telefone</h4>
+                      <p style="text-align: left">(678) 691-1783</p>
+                    </li>
+                    <li>
+                      <h4><i class="fa fa-map-marker"></i>Address</h4>
+                      <p style="text-align: left">
+                        10900 Medlock Bridge Rd #306, Johns Creek, GA 30097
+                      </p>
+                    </li>
+                    <li>
+                      <h4><i class="fa fa-envelope"></i>E mail</h4>
+                      <p style="text-align: left">
+                        rest@gmail.com - rest@mail.ru
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- .col-md-4 close -->
+
+            <!-- .col-md-4 close -->
+            <div class="col-md-4">
+              <div class="block wow fadeInLeft" data-wow-delay="1100ms">
+                <h3>FOOTER <span>NAVIGATION</span></h3>
+
+                <ul class="footernavs">
+                  <li><a href="#hero-area">Home</a></li>
+                  <li><a href="about.html">About us</a></li>
+                  <li><a href="about.html">Menu</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="#contact-us">Contacts</a></li>
+                </ul>
+              </div>
+
+              <!-- <div class="gallary">
+                              <h3>GALLERY <span></span></h3>
+                            
+                            
+                              <ul style="margin-top: -23px;">
+                                  <li>
+                                      <a href="#"><img src="images/slider-img-1z.jpg" alt=""></a>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="images/slider-img-2z.jpg" alt=""></a>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="images/slider-img-3z.jpg" alt=""></a>
+                                  </li>
+                                  <li>
+                                      <a href="#"><img src="images/photo/photo-4.jpg" alt=""></a>
+                                  </li>
+                              </ul>
+                          </div> -->
+            </div>
+
+            <div class="col-md-4">
+              <div class="block wow fadeInLeft" data-wow-delay="1100ms">
+                <h3>FOLLOW <span>US</span></h3>
+                <div class="social-media-link">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- .col-md-4 close -->
+        </div>
+        <!-- .containe close -->
+      </section>
+      <!-- #footer close -->
+      <!--
+      footer-bottom  start
+      ============================= -->
+    </footer>
+
+    <script src="main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
